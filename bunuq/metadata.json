@@ -1,0 +1,38 @@
+{
+  "maintainer_email": "chef@ram9.cc",
+  "groupings": {
+  },
+  "license": "GPLv3",
+  "recommendations": {
+  },
+  "recipes": {
+  },
+  "suggestions": {
+  },
+  "description": "Installs/Configures bunuq",
+  "conflicting": {
+  },
+  "platforms": {
+  },
+  "attributes": {
+  },
+  "providing": {
+  },
+  "dependencies": {
+    "nodejs": [
+
+    ],
+    "daemontools": [
+
+    ],
+    "build-essential": [
+
+    ]
+  },
+  "name": "bunuq",
+  "version": "0.0.1",
+  "maintainer": "RAM9",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "replacing": {
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "maintainer_email": "cookbooks@opscode.com",
+  "groupings": {
+  },
+  "license": "Apache 2.0",
+  "recommendations": {
+  },
+  "recipes": {
+  },
+  "suggestions": {
+  },
+  "description": "Installs sqlite",
+  "conflicting": {
+  },
+  "platforms": {
+    "debian": [
+
+    ],
+    "ubuntu": [
+
+    ]
+  },
+  "attributes": {
+  },
+  "providing": {
+  },
+  "dependencies": {
+  },
+  "name": "sqlite",
+  "version": "0.7.0",
+  "maintainer": "Opscode, Inc.",
+  "long_description": "",
+  "replacing": {
+  }
+}

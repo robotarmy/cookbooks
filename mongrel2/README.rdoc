@@ -1,0 +1,12 @@
+= DESCRIPTION:
+Mongrel2 Cookbook
+
+install mongrel2
+
+= REQUIREMENTS:
+
+= ATTRIBUTES:
+
+
+= USAGE:
+

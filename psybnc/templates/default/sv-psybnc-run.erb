@@ -1,0 +1,5 @@
+#!/bin/sh
+exec 2>&1
+DAEMON=<%= @node[:psybnc][:dir] %>/psybnc
+exec setuidgid <%= @node[:psybnc][:user] %> $DAEMON
+
