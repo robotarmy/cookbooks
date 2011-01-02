@@ -62,6 +62,7 @@ bash "install bunuq nodejs dependencies" do
 	npm install express && \
 	npm install jade && \
   npm install less && \
+  npm install redis && \
   npm install vows '
 	EOH
 end
