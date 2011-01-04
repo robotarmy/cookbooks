@@ -3,20 +3,12 @@ var server = 'irc.freenode.net'
 var channels = ['#unhosted']
 var nick = 'bunuq'
 var password = 'mr.unhosted.logbot'
-var logmode = 'nstore'  // nstore or text
-var logfile = '<%=node[:bunuq][:app]%>/unhosted.log.db'
-
 var auth = false; // if no password, not registered, set to false.
 var ircbot = true; // if you want to toggle off irc bot mode
-var webserver = true; // if you want to toggle on the web server
 
 // simple exports
 exports.server = function() {
         return server;
-}
-
-exports.webserver = function() {
-        return webserver;
 }
 
 exports.ircbot = function() {
@@ -37,13 +29,5 @@ exports.password = function() {
 
 exports.auth = function() {
         return auth
-}
-
-exports.logfile = function() {
-        return logfile
-}
-
-exports.logmode = function() {
-        return logmode;
 }
 
