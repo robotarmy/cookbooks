@@ -1,33 +1,24 @@
-// set your configurations
-var server = 'irc.freenode.net'
-var channels = ['#unhosted']
-var nick = 'bunuq'
-var password = 'mr.unhosted.logbot'
-var auth = false; // if no password, not registered, set to false.
-var ircbot = true; // if you want to toggle off irc bot mode
 
+configs = {
+  '2600' : {
+    server : 'irc.2600.net',
+    channels : ['#hscool','#hackunion'],
+    nick : 'MrRam9t',
+    password : '',
+    auth : false
+  }
+  , 'freenode' : {
+    server : 'irc.freenode.net',
+    channels : ['#unhosted'],
+    nick : 'bunuq',
+    password : 'mr.unhosted.logbot',
+    auth : true
+  }
+  }
 // simple exports
-exports.server = function() {
-        return server;
-}
-
-exports.ircbot = function() {
-        return ircbot;
-}
-
-exports.channels = function() {
-        return channels;
-}
-
-exports.nick = function() {
-        return nick;
-}
-
-exports.password = function() {
-        return password
-}
-
-exports.auth = function() {
-        return auth
+exports.servers = function(callback) {
+  for( x in configs) {
+	  callback(configs[x]) 
+  }
 }
 

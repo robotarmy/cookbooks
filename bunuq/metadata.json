@@ -1,38 +1,38 @@
 {
-  "maintainer_email": "chef@ram9.cc",
-  "groupings": {
-  },
-  "license": "GPLv3",
-  "recommendations": {
-  },
-  "recipes": {
-  },
-  "suggestions": {
-  },
+  "name": "bunuq",
   "description": "Installs/Configures bunuq",
-  "conflicting": {
-  },
+  "long_description": "= DESCRIPTION:\n\nBUNUQ is a bot that lives in #unhosted - it is based on tocho!\n\nBUNUQ has a command \n!last n /regexp/  :  send me the last n messages matching regexp\n!last n           :  just send me the last n messages\n\nRight now BUNUQ has an nstore for all channel history - he wants to move to redis .\n\nRight now BUNUQ has an 1000 item in memory 'index' used for !last - he would like to write that to redis too .\n\n= REQUIREMENTS:\n\n git@github.com:robotarmy/cookbooks.git/bunuq\n\n chef\n\n= ATTRIBUTES:\n  look in the attributes/defaults.rb \n= USAGE:\n\n  add bunuq to run_list with knife :\n\n  knife node run_list add HOSTNAME 'recipe[bunuq]'\n\n  chef-client \n  (i'm using opscode as my chef-server)\n\n\n",
+  "maintainer": "RAM9",
+  "maintainer_email": "chef@ram9.cc",
+  "license": "GPLv3",
   "platforms": {
   },
-  "attributes": {
-  },
-  "providing": {
-  },
   "dependencies": {
-    "nodejs": [
+    "build-essential": [
 
     ],
     "daemontools": [
 
     ],
-    "build-essential": [
+    "nodejs": [
 
     ]
   },
-  "name": "bunuq",
-  "version": "0.0.1",
-  "maintainer": "RAM9",
-  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
   "replacing": {
-  }
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.0.1"
 }

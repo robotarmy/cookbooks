@@ -78,7 +78,6 @@ daemontools_service "bunuq" do
   supports :start   => true,
            :stop    => true,
            :restart => true
-  action [:enable, :start]
-  subscribes :restart, resources(:template => node[:bunuq][:config])
+  action [:kill]
 end
 
