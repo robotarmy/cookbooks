@@ -2,9 +2,9 @@
 # Cookbook Name:: bunuq
 # Recipe:: default
 #
-# Copyright 2010, YOUR_COMPANY_NAME
+# Copyright 2010, RAM9 , Curtis Schofield 
 #
-# All rights reserved - Do Not Redistribute
+# All rights reserved - Redistribute at your own peril
 #
 #
 include_recipe "nodejs::npm"

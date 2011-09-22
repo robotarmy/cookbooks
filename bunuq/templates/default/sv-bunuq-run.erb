@@ -1,5 +1,5 @@
 #!/bin/sh
 exec 2>&1
 cd <%=node[:bunuq][:app]%>
-exec setuidgid <%=node[:bunuq][:user]%> envdir <%=node[:bunuq][:sv]%>/env node <%=node[:bunuq][:app]%>/bot.js
+exec setuidgid <%=node[:bunuq][:user]%> envdir <%=node[:bunuq][:sv]%>/env <%=node[:nodejs][:exe]%> <%=node[:bunuq][:app]%>/bot.js
 

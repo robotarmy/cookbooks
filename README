@@ -1,0 +1,10 @@
+#do.log : update nodejs version - install  http-proxy
+
+
+gem install chef
+knife status
+# if set up right - should tell us about our machines
+knife cookbook upload nodejs
+# send up resque_schedule_worker setup
+knife cookbook upload resque_schedule_worker
+#
