@@ -18,10 +18,12 @@ end
 
 [ node[:bunuq][:dir],
   node[:bunuq][:app]  ].each do |dir|
-  owner node[:bunuq][:user]
-  group node[:bunuq][:user]
-  mode 0755
-  recursive true
+  directory dir do
+    owner node[:bunuq][:user]
+    group node[:bunuq][:user]
+    mode 0755
+    recursive true
+  end
 end
 
 directory node[:bunuq][:sv]
