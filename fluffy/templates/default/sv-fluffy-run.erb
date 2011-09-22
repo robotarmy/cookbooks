@@ -1,0 +1,5 @@
+#!/bin/sh
+exec 2>&1
+cd <%=node[:fluffy][:app]%>
+exec setuidgid <%=node[:fluffy][:user]%> envdir <%=node[:fluffy][:sv]%>/env <%=node[:nodejs][:exe] <%=node[:fluffy][:app]%>/bot.js
+

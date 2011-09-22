@@ -1,0 +1,23 @@
+= DESCRIPTION:
+
+  FLUFFY is a proxy built on nodejs that sits in front of ram9
+
+= REQUIREMENTS:
+
+ git@github.com:robotarmy/cookbooks.git/fluffy
+
+ chef
+
+= ATTRIBUTES:
+  look in the attributes/defaults.rb 
+
+= USAGE:
+
+  add bunuq to run_list with knife :
+
+  knife node run_list add HOSTNAME 'recipe[fluffy]'
+
+  chef-client 
+  (i'm using opscode as my chef-server)
+
+
