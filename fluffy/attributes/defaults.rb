@@ -8,7 +8,7 @@ default.fluffy[:sv]      = "#{node[:fluffy][:dir]}/sv"
 
 default.fluffy[:config]  = "#{node[:fluffy][:app]}/lib/config.js"
 
-defaultfluffy][:user]    = "fluffy"
-defaultfluffy][:git]     = "git://github.com/RAM9/fluffy.git"
+default.fluffy][:user]    = "fluffy"
+default.fluffy][:git]     = "git://github.com/RAM9/fluffy.git"
 
 
