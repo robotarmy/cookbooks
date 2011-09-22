@@ -9,13 +9,14 @@
 #
 include_recipe "nodejs::npm"
 
-
 user node[:bunuq][:user] do
   comment "bunuq daemon"
 	home node[:bunuq][:dir]
   shell "/bin/zsh"
 	not_if 'id bunuq'
 end
+
+directory node[:bunuq][:dir]
 
 file "#{node[:bunuq][:dir]}/.zshrc" do
   action :create
