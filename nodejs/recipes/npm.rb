@@ -24,7 +24,7 @@ bash "install npm - package manager for node" do
   cwd node[:build][:dir]
   user "root"
   code <<-EOH
-    curl http://npmjs.org/install.sh | sh
+    curl http://npmjs.org/install.sh | clean=yes sh
   EOH
 end
 
