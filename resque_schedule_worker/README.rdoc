@@ -1,0 +1,4 @@
+= DESCRIPTION:
+
+
+Meta-package for configuring a resque schedule worker

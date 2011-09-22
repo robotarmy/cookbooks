@@ -1,0 +1,5 @@
+#!/bin/sh
+exec 2>&1
+cd <%=node[:rsw][:app]%>
+exec setuidgid <%=node[:rsw][:user]%> envdir <%=@variables[:service_directory]%>/env <%=node[:rsw][:command]%>
+

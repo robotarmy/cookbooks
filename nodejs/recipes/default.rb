@@ -1,6 +1,6 @@
 #
 # Author:: Marius Ducea   (marius@promethost.com)
-# Author:: Curtis Schofie (chef@ram9.cc)
+# Author:: Curtis Schofield (chef@ram9.cc)
 # Cookbook Name:: nodejs
 # Recipe:: default
 #
@@ -29,13 +29,16 @@ case node[:platform]
     package "libssl-dev"
 end
 
-remote_file "/usr/local/src/node-v#{node[:nodejs][:version]}.tar.gz" do
+build_dir = node[:build][:dir]
+directory build_dir 
+
+remote_file "/op/build/node-v#{node[:nodejs][:version]}.tar.gz" do
 	source "http://nodejs.org/dist/node-v#{node[:nodejs][:version]}.tar.gz"
   action :create_if_missing
 end
 
 bash "install nodejs from source" do
-  cwd "/usr/local/src"
+  cwd build_dir
   code <<-EOH
     tar zxf node-v#{node[:nodejs][:version]}.tar.gz
     cd node-v#{node[:nodejs][:version]}

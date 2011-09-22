@@ -16,8 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-default.nodejs[:version] = "0.4.2"
-default.nodejs[:dir] = "/usr/local"
-default.nodejs[:npm] = "0.3.14"
+default.build[:dir] = "/op/build"
+default.nodejs[:version] = "0.4.12"
+default.nodejs[:dir] = "/op/node.js"
 
