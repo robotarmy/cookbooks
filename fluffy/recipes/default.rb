@@ -17,6 +17,16 @@ user node[:fluffy][:user] do
 	not_if 'id fluffy'
 end
 
+[ node[:fluffy][:dir],
+  node[:fluffy][:app]  ].each do |dir|
+  directory dir do
+    owner node[:fluffy][:user]
+    group node[:fluffy][:user]
+    mode 0755
+    recursive true
+  end
+end
+
 file "#{node[:fluffy][:dir]}/.zshrc" do
   action :create
 end
