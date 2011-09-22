@@ -19,4 +19,4 @@
 default.build[:dir] = "/op/build"
 default.nodejs[:version] = "0.4.12"
 default.nodejs[:dir] = "/op/node.js"
-default.nodejs[:exe] = "/op/node.js/bin/node
+default.nodejs[:exe] = "/op/node.js/bin/node"
