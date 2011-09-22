@@ -16,7 +16,15 @@ user node[:bunuq][:user] do
 	not_if 'id bunuq'
 end
 
-directory node[:bunuq][:dir]
+[ node[:bunuq][:dir],
+  node[:bunuq][:app]  ].each do |dir|
+  owner node[:bunuq][:user]
+  group node[:bunuq][:user]
+  mode 0755
+  recursive true
+end
+
+directory node[:bunuq][:sv]
 
 file "#{node[:bunuq][:dir]}/.zshrc" do
   action :create
