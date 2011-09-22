@@ -55,18 +55,13 @@ template node[:fluffy][:npmrc] do
   group node[:fluffy][:user]
 end
 
-template node[:fluffy][:config] do
-  source "config.js.erb"
-  owner node[:fluffy][:user]
-  group node[:fluffy][:user]
-end
-
 bash "install fluffy nodejs dependencies" do
 	# run as user - in login shell 
 	# so npm will read .npmrc
 	code <<-EOH
 	su - #{node[:fluffy][:user]} -c '
-  npm install node-http-proxy
+  npm install http-proxy \
+  '
 	EOH
 end
 
